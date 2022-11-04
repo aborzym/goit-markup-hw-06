@@ -322,7 +322,7 @@ ul {
   border-color: var(--blue);
 }
 
-.input-container:has(input:focus) .modal-icon {
+.input-container:has(input:focus) > svg {
   fill: var(--blue);
 }
 
@@ -397,8 +397,7 @@ ul {
   position: absolute;
   width: 16px;
   height: 15px;
-  /* FIXME - sprawdz pozycję z Figmą */
-  top: 4px;
+  top: 3px;
   user-select: none;
 }
 
@@ -740,6 +739,7 @@ ul {
   background-color: rgba(0 0 0 / 0);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: var(--greyrgba);
 }
 
 .footer-input::placeholder {

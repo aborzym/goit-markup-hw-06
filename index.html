@@ -85,7 +85,7 @@
                 <div class="modal-forms-flex">
                   <label class="modal-label" for="user-name"
                     >Imię
-                    <div class="input-container">
+                    <span class="input-container">
                       <svg class="modal-icon">
                         <use href="./images/icons.svg#person"></use>
                       </svg>
@@ -95,11 +95,11 @@
                         id="user-name"
                         name="user-name"
                       />
-                    </div>
+                    </span>
                   </label>
                   <label class="modal-label" for="user-phone"
                     >Telefon
-                    <div class="input-container">
+                    <span class="input-container">
                       <svg class="modal-icon">
                         <use href="./images/icons.svg#phone"></use>
                       </svg>
@@ -109,11 +109,11 @@
                         id="user-phone"
                         name="user-phone"
                       />
-                    </div>
+                    </span>
                   </label>
                   <label class="modal-label" for="user-email"
                     >Email
-                    <div class="input-container">
+                    <span class="input-container">
                       <svg class="modal-icon">
                         <use href="./images/icons.svg#email"></use>
                       </svg>
@@ -123,7 +123,7 @@
                         id="user-email"
                         name="user-email"
                       />
-                    </div>
+                    </span>
                   </label>
                   <label for="comment" class="modal-label"
                     >Komentarz
@@ -145,6 +145,7 @@
                         id="checkbox"
                         type="checkbox"
                         class="checkbox-input"
+                        name="regulations-acceptance"
                       />
 
                       <svg class="checkbox-svg">
@@ -587,8 +588,14 @@
           <h4 class="mb-20">Zapisz się do newslettera</h4>
           <div class="footer-form-container">
             <form class="footer-form">
-              <label>
-                <input class="footer-input" type="text" placeholder="Email" />
+              <label for="submit-email">
+                <input
+                  class="footer-input"
+                  type="text"
+                  placeholder="Email"
+                  id="submit-email"
+                  name="newsletter-submit-email"
+                />
               </label>
             </form>
             <button type="submit" class="button-newsletter">
