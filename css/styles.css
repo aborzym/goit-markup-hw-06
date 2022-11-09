@@ -24,13 +24,15 @@
 /* =============== GLOBAL CSS ================ */
 
 body {
-  margin: 0;
+  /* margin: 0;
   margin: auto;
-  padding: 0;
+  padding: 0; */
   font-family: "Roboto";
   color: var(--vdgrey);
-  background-color: var(--lgrey);
-  width: 1600px;
+  background-color: var(--white);
+  /* width: 1600px; */
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 h4 {
@@ -71,9 +73,14 @@ ul {
   gap: 10px;
 }
 
+.flex-baseline {
+  display: flex;
+  align-items: baseline;
+}
+
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -118,16 +125,16 @@ ul {
   margin-bottom: 20px;
 }
 /* =============== HEADER ================ */
-
-.menu {
+.header {
+  border-bottom: 1px solid var(--header-border);
+}
+.header-content {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--header-border);
-  background-color: var(--white);
 }
 
 .menu-logo {
-  padding-left: 215px;
+  /* padding-left: 215px; */
   padding-top: 24px;
   padding-bottom: 25px;
   display: flex;
@@ -156,14 +163,14 @@ ul {
 
 .menu-nav-list {
   display: flex;
-  gap: 46px;
+  gap: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .menu-nav-right-container {
-  margin-left: 345px;
+  margin-left: auto;
 }
 .menu-nav-right {
   display: flex;
@@ -172,6 +179,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-left: auto;
 }
 
 .header2 {
@@ -191,11 +199,16 @@ ul {
       var(--main-image-linear-gradient)
     ),
     url(../images/background-image.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .slogan {
-  margin: 0;
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -313,8 +326,9 @@ ul {
   height: 40px;
   border: 1px solid var(--modal-input-border-color);
   border-radius: 4px;
-  transition: outline-color var(--transition-duration) var(--cubic-bezier);
-  will-change: outline-color;
+  outline: transparent;
+  transition: border var(--transition-duration) var(--cubic-bezier);
+  will-change: border;
 }
 
 .modal-input:focus,
@@ -333,8 +347,9 @@ ul {
   border: 1px solid var(--modal-input-border-color);
   border-radius: 4px;
   resize: none;
-  transition: outline-color var(--transition-duration) var(--cubic-bezier);
-  will-change: outline-color;
+  outline: transparent;
+  transition: border var(--transition-duration) var(--cubic-bezier);
+  will-change: border;
 }
 
 .modal-textarea::placeholder {
@@ -633,7 +648,7 @@ ul {
 
 .footer {
   background-color: var(--dgrey);
-  padding-left: 215px;
+  /* padding-left: 215px; */
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -688,8 +703,7 @@ ul {
 /* =============== FOOTER SOCIALS ================ */
 
 .footer-socials {
-  padding-top: 12px;
-  margin-right: 78px;
+  margin-right: auto;
   display: inline-flex;
   flex-direction: column;
 }
@@ -724,7 +738,6 @@ ul {
 /* =============== FOOTER NEWSLETTER ================ */
 
 .footer-newsletter {
-  padding-top: 12px;
 }
 
 .footer-form-container {
